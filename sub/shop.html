@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAZY YOGURT</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="../img/common/favicon.ico">
+
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <!-- js -->
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="../js/main.js"></script>
+</head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="inner">
+          <h1>
+            <a href="../index.html"><img src="../img/common/logo.png" alt="레이지 요거트"></a>
+          </h1>
+
+          <nav>
+            <ul class="gnb">
+              <li>
+                <a href="shop.html">Shop</a>
+                <ul class="depth2">
+                  <li><a href="shop.html">All</a></li>
+                  <li><a href="shop.html">Yogurt</a></li>
+                  <li><a href="#">Topping</a></li>
+                  <li><a href="#">Pet & I</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="offline.html">Offline</a>
+              </li>
+              <li>
+                <a href="cs.html">Community</a>
+                <ul class="depth2">
+                  <li><a href="cs.html">Notice</a></li>
+                  <li><a href="cs.html">QnA</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="search">
+            <input type="text">
+            <button type="button" class="btn-search">검색</button>
+          </div>
+
+          <div class="mgnb-btn">
+            <button type="button">메뉴</button>
+          </div>
+        </div><!-- .inner -->
+      </header>
+
+      <div class="mgnb-wrap">
+
+          <button type="button" class="close">메뉴 닫기</button>
+
+          <div class="mgnb-bg">
+            <ul class="mgnb">
+              <li>
+                <a href="#">Shop</a>
+                <ul class="mdepth2">
+                  <li><a href="shop.html">All</a></li>
+                  <li><a href="shop.html">Yogurt</a></li>
+                  <li><a href="#">Topping</a></li>
+                  <li><a href="#">Pet & I</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="offline.html">Offline</a>
+              </li>
+              <li>
+                <a href="#">Community</a>
+                <ul class="mdepth2">
+                  <li><a href="cs.html">Notice</a></li>
+                  <li><a href="cs.html">QnA</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+      </div><!-- .mgnb-wrap -->
+      <div class="mgnb-modal"></div>
+
+
+      <div id="shop">
+        <ul class="sub-tab">
+          <li><a href="#">All</a></li>
+          <li class="active"><a href="#">Yogurt</a></li>
+          <li><a href="#">Topping</a></li>
+          <li><a href="#">Pet & I</a></li>
+        </ul>
+
+        <div class="best">
+          <h2 class="sub-page-tit">Best&nbsp;Menu</h2>
+          <ul data-aos="fade-up">
+            <li><a href="#" class="top-x"><img src="../img/sub/best-menu1.png" alt="그릭요거트 플레인"><p>그릭요거트 <br class="b-none">플레인</p></a></li>
+            <li><a href="#" class="top-x"><img src="../img/sub/best-menu2.png" alt="그릭요거트 피스타치오"><p>그릭요거트 <br class="b-none">피스타치오</p></a></li>
+            <li><a href="#" class="top-x"><img src="../img/sub/best-menu3.png" alt="그릭요거트 말차"><p>그릭요거트 <br class="b-none">말차</p></a></li>
+          </ul>
+        </div><!-- .best -->
+
+        <div class="menu">
+          <div class="inner">
+            <ul>
+              <li data-aos="zoom-in">
+                <div class="menu-img">
+                  <a href="#" class="top-x">
+                    <img src="../img/sub/menu-1.png" alt="그릭요거트 플레인" class="menu-thum">
+                    <img src="../img/sub/menu-hover1.png" alt="그릭요거트 플레인" class="menu-hover">
+                    <img src="../img/sub/best.png" alt="베스트메뉴" class="best-logo">
+                    <img src="../img/sub/menu-cir1.png" alt="그릭요거트 플레인" class="menu-cir">
+                  </a>
+                </div><!-- menu-img -->
+                <div class="menu-name">
+                  <a href="#" class="top-x">
+                    <p>그릭요거트 플레인</p>
+                    <span>KRW 13,900</span>
+                  </a>
+                </div><!-- menu-name -->
+              </li>
+
+              <li data-aos="zoom-in">
+                <div class="menu-img">
+                  <a href="#" class="top-x">
+                    <img src="../img/sub/menu-2.png" alt="그릭요거트  피스타치오" class="menu-thum">
+                    <img src="../img/sub/menu-hover2.png" alt="그릭요거트 피스타치오" class="menu-hover">
+                    <img src="../img/sub/new.png" alt="신메뉴" class="best-logo">
+                    <img src="../img/sub/menu-cir2.png" alt="그릭요거트 피스타치오" class="menu-cir">
+                  </a>
+                </div><!-- menu-img -->
+                <div class="menu-name">
+                  <a href="#" class="top-x">
+                    <p>그릭요거트 피스타치오</p>
+                    <span>KRW 13,900</span>
+                  </a>
+                </div><!-- menu-name -->
+              </li>
+
+              <li data-aos="zoom-in">
+                <div class="menu-img">
+                  <a href="#" class="top-x">
+                    <img src="../img/sub/menu-3.png" alt="그릭요거트 말차초코" class="menu-thum">
+                    <img src="../img/sub/menu-hover3.png" alt="그릭요거트 말차초코" class="menu-hover">
+                    <img src="../img/sub/best.png" alt="베스트메뉴" class="best-logo">
+                    <img src="../img/sub/menu-cir3.png" alt="그릭요거트 말차초코" class="menu-cir">
+                  </a>
+                </div><!-- menu-img -->
+                <div class="menu-name">
+                  <a href="#" class="top-x">
+                    <p>그릭요거트 말차초코</p>
+                    <span>KRW 13,900</span>
+                  </a>
+                </div><!-- menu-name -->
+              </li>
+
+              <li data-aos="zoom-in">
+                <div class="menu-img">
+                  <a href="#" class="top-x">
+                    <img src="../img/sub/menu-4.png" alt="그릭요거트 두유" class="menu-thum">
+                    <img src="../img/sub/menu-hover4.png" alt="그릭요거트 두유" class="menu-hover">
+                    <img src="../img/sub/new.png" alt="신메뉴" class="best-logo">
+                    <img src="../img/sub/menu-cir4.png" alt="그릭요거트 두유" class="menu-cir">
+                  </a>
+                </div><!-- menu-img -->
+                <div class="menu-name">
+                  <a href="#" class="top-x">
+                    <p>그릭요거트 두유</p>
+                    <span>KRW 13,900</span>
+                  </a>
+                </div><!-- menu-name -->
+              </li>
+
+              <li data-aos="zoom-in">
+                <div class="menu-img">
+                  <a href="#" class="top-x">
+                    <img src="../img/sub/menu-5.png" alt="그릭요거트 딸기" class="menu-thum">
+                    <img src="../img/sub/menu-hover5.png" alt="그릭요거트 딸기" class="menu-hover">
+                    <img src="../img/sub/best.png" alt="베스트메뉴" class="best-logo">
+                    <img src="../img/sub/menu-cir5.png" alt="그릭요거트 딸기" class="menu-cir">
+                  </a>
+                </div><!-- menu-img -->
+                <div class="menu-name">
+                  <a href="#" class="top-x">
+                    <p>그릭요거트 딸기</p>
+                    <span>KRW 13,900</span>
+                  </a>
+                </div><!-- menu-name -->
+              </li>
+
+              <li data-aos="zoom-in">
+                <div class="menu-img">
+                  <a href="#" class="top-x">
+                    <img src="../img/sub/menu-6.png" alt="그릭요거트 자몽" class="menu-thum">
+                    <img src="../img/sub/menu-hover6.png" alt="그릭요거트 자몽" class="menu-hover">
+                    <img src="../img/sub/menu-cir6.png" alt="그릭요거트 자몽" class="menu-cir">
+                  </a>
+                </div><!-- menu-img -->
+                <div class="menu-name">
+                  <a href="#" class="top-x">
+                    <p>그릭요거트 자몽</p>
+                    <span>KRW 13,900</span>
+                  </a>
+                </div><!-- menu-name -->
+              </li>
+
+              <li data-aos="zoom-in">
+                <div class="menu-img">
+                  <a href="#" class="top-x">
+                    <img src="../img/sub/menu-7.png" alt="그릭요거트 밤" class="menu-thum">
+                    <img src="../img/sub/menu-hover7.png" alt="그릭요거트 밤" class="menu-hover">
+                    <img src="../img/sub/menu-cir7.png" alt="그릭요거트 밤" class="menu-cir">
+                  </a>
+                </div><!-- menu-img -->
+                <div class="menu-name">
+                  <a href="#" class="top-x">
+                    <p>그릭요거트 밤</p>
+                    <span>KRW 13,900</span>
+                  </a>
+                </div><!-- menu-name -->
+              </li>
+
+              <li data-aos="zoom-in">
+                <div class="menu-img">
+                  <a href="#" class="top-x">
+                    <img src="../img/sub/menu-8.png" alt="그릭요거트 로투스" class="menu-thum">
+                    <img src="../img/sub/menu-hover8.png" alt="그릭요거트 로투스" class="menu-hover">
+                    <img src="../img/sub/new.png" alt="신메뉴" class="best-logo">
+                    <img src="../img/sub/menu-cir8.png" alt="그릭요거트 로투스" class="menu-cir">
+                  </a>
+                </div><!-- menu-img -->
+                <div class="menu-name">
+                  <a href="#" class="top-x">
+                    <p>그릭요거트 로투스</p>
+                    <span>KRW 13,900</span>
+                  </a>
+                </div><!-- menu-name -->
+              </li>
+
+              <li data-aos="zoom-in">
+                <div class="menu-img">
+                  <a href="#" class="top-x">
+                    <img src="../img/sub/menu-9.png" alt="그릭요거트 초코" class="menu-thum">
+                    <img src="../img/sub/menu-hover9.png" alt="그릭요거트 초코" class="menu-hover">
+                    <img src="../img/sub/menu-cir9.png" alt="그릭요거트 초코" class="menu-cir">
+                  </a>
+                </div><!-- menu-img -->
+                <div class="menu-name">
+                  <a href="#" class="top-x">
+                    <p>그릭요거트 초코</p>
+                    <span>KRW 13,900</span>
+                  </a>
+                </div><!-- menu-name -->
+              </li>
+
+              <li data-aos="zoom-in">
+                <div class="menu-img">
+                  <a href="#" class="top-x">
+                    <img src="../img/sub/menu-10.png" alt="그릭요거트 오레오" class="menu-thum">
+                    <img src="../img/sub/menu-hover10.png" alt="그릭요거트 오레오" class="menu-hover">
+                    <img src="../img/sub/best.png" alt="베스트메뉴" class="best-logo">
+                    <img src="../img/sub/menu-cir10.png" alt="그릭요거트 오레오" class="menu-cir">
+                  </a>
+                </div><!-- menu-img -->
+                <div class="menu-name">
+                  <a href="#" class="top-x">
+                    <p>그릭요거트 오레오</p>
+                    <span>KRW 13,900</span>
+                  </a>
+                </div><!-- menu-name -->
+              </li>
+
+              <li data-aos="zoom-in">
+                <div class="menu-img">
+                  <a href="#" class="top-x">
+                    <img src="../img/sub/menu-11.png" alt="그릭요거트 블루베리" class="menu-thum">
+                    <img src="../img/sub/menu-hover11.png" alt="그릭요거트 블루베리" class="menu-hover">
+                    <img src="../img/sub/menu-cir11.png" alt="그릭요거트 블루베리" class="menu-cir">
+                  </a>
+                </div><!-- menu-img -->
+                <div class="menu-name">
+                  <a href="#" class="top-x">
+                    <p>그릭요거트 블루베리</p>
+                    <span>KRW 13,900</span>
+                  </a>
+                </div><!-- menu-name -->
+              </li>
+
+              <li data-aos="zoom-in">
+                <div class="menu-img">
+                  <a href="#" class="top-x">
+                    <img src="../img/sub/menu-12.png" alt="그릭요거트 황치즈" class="menu-thum">
+                    <img src="../img/sub/menu-hover12.png" alt="그릭요거트 황치즈" class="menu-hover">
+                    <img src="../img/sub/new.png" alt="신메뉴" class="best-logo">
+                    <img src="../img/sub/menu-cir12.png" alt="그릭요거트 황치즈" class="menu-cir">
+                  </a>
+                </div><!-- menu-img -->
+                <div class="menu-name">
+                  <a href="#" class="top-x">
+                    <p>그릭요거트 황치즈</p>
+                    <span>KRW 13,900</span>
+                  </a>
+                </div><!-- menu-name -->
+              </li>
+            </ul>
+
+          </div><!-- .inner -->
+        </div><!-- .menu -->
+
+      </div><!-- #shop -->
+
+      
+      <footer>
+        <!-- <img src="img/common/fbg.png" class="f-bg" alt="배경"> -->
+        <div class="inner">
+          <h2>
+            <img src="../img/common/f-logo.png" alt="레이지요거트">
+          </h2>
+
+            <div class="f-bottom">
+              <div class="f-left">
+                <ul>
+                  <li>070 - 4246 - 5560</li>
+                  <li>Mon - Fri : am 10:00 - 20:00 | Open year round (연중무휴)</li>
+                  <li>lazyyogurt@naver.com</li>
+                </ul>
+                <ul class="f-list">
+                  <li><a href="#">Terms of use</a></li>
+                  <li><a href="#">Privacy police</a></li>
+                  <li><a href="#">Company info</a></li>
+                </ul>
+              </div>
+
+              <div class="f-right">
+                  <a href="#">
+                    <img src="../img/common/f-sns1.png" alt="레이지요거트 네이버 스토어">
+                  </a>
+                  <a href="#">
+                    <img src="../img/common/f-sns2.png" alt="레이지요거트 인스타그램">
+                  </a>
+              </div>
+            </div>
+          </div>
+      </footer>
+
+    </div><!-- wrap -->
+  </body>
+  <script src="https://kit.fontawesome.com/5ec8d5e557.js" crossorigin="anonymous"></script>
+</html>

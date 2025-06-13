@@ -1,0 +1,369 @@
+@charset "utf-8";
+
+.inner{ 
+  max-width: 1400px; 
+  padding: 20px 100px; 
+  margin: 0 auto; 
+}
+
+/* header */
+header{
+  position: absolute;
+  z-index: 996;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header h1{
+  width: 90px;
+}
+header h1 img{
+  width: 100%;
+}
+header .inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav { 
+  margin: 0 auto 0 80px; 
+}
+header .gnb{
+  display: flex;
+  gap: 35px;
+}
+header .gnb a{
+  color: var(--main-color);
+  font-weight: 600;
+}
+.gnb li{
+  position: relative;
+}
+header .gnb .depth2{
+  position: absolute;
+  text-align: center;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  padding: 10px 0;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(131, 131, 131, 0.6);
+}
+header .gnb .depth2 li a{
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #D1D9D6;
+  padding: 10px 35px;
+  display: block;
+  transition: all 0.3s;
+}
+header .gnb .depth2 a:hover{
+  color: #fff;
+}
+header .search{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+}
+header .search .btn-search{
+  width: 24px; 
+  height: 24px;
+  font-size: 0;
+  color: transparent;
+  background: url(../img/common/search.png)no-repeat center / 24px;
+  cursor: pointer;
+}
+
+.search input{
+  border-bottom: 2px solid var(--main-color);
+  font-size: 2rem;
+  color: var(--main-color);
+  width: 0; 
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.4s ; 
+  overflow: hidden;
+  padding: 10px; 
+  background-color: transparent;
+}
+
+.search.active input {
+  width: 200px;  
+  opacity: 1;
+  transform: translateX(0); 
+  padding-left: 8px;   
+}
+
+.mgnb-btn{
+  display: none;
+}
+.mgnb-btn button{
+  font-size: 0;
+  color: transparent;
+  width: 24px; 
+  height: 24px;
+  font-size: 0;
+  color: transparent;
+  background: url(../img/common/ham.png)no-repeat center / 24px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+@media (max-width:1200px) {
+  .inner {
+    padding: 15px 38px; 
+  }
+  header h1{
+    width: 70px;
+  }
+}
+@media (max-width:1024px) {
+  header .gnb{
+    display: none;
+  }
+  .search input{
+    width: 100px;
+  }
+  .mgnb-btn{
+    display: block;
+  }
+}
+
+@media (max-width:765px){
+  .inner {
+    padding: 15px 27px; 
+  }
+  header .search .btn-search, .mgnb-btn button{
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+  }
+  header h1{
+    width: 60px;
+  }
+  .mgnb-btn button{
+    margin-top: 1px;
+  }
+}
+
+.mgnb-wrap{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  right: -100%;
+  top: 0;
+  padding: 5%;
+}
+.mgnb-wrap .close{
+  width: 20px; 
+  height: 20px;
+  font-size: 0;
+  color: transparent;
+  background: url(../img/common/mgnb-close.png)no-repeat center / 20px;
+  cursor: pointer;
+  right: 3%;
+  position: absolute;
+  z-index: 9999;
+  transition: all 0.2s;
+}
+.mgnb-wrap .close:hover{
+  rotate: -90deg;
+}
+.mgnb-modal{
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  z-index: 997;
+  left: 0;
+  top: 0;
+  position: fixed;
+}
+.mgnb-bg{
+  width: 40%;
+  height: 100%;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px;
+}
+.mgnb-wrap .mgnb > li{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s;
+}
+.mgnb-wrap .mgnb > li:hover{
+  border-bottom: 1px solid #fff;
+}
+.mgnb{
+  margin-top: 110px;
+}
+.mgnb > li a{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+  padding: 25px 0 20px 0;
+  display: block;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.mgnb > li:hover a{
+  opacity: 1;
+}
+.mdepth2 > li > a{
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-weight: 200;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 1.8rem;
+  padding-top: 20px;
+  transition: all 0.3s;
+}
+.mdepth2 > li > a:hover{
+  color: rgba(255, 255, 255, 1);
+}
+.mdepth2{
+  display: none;
+  margin-bottom: 20px;
+}
+
+@media (max-width:1024px) {
+  .mgnb > li a{
+    font-size: 1.8rem;
+    padding: 20px 0 15px 0;
+  }
+ .mdepth2 > li > a{
+    font-size: 1.4rem;
+    padding-top: 10px;
+ }
+ .mdepth2 > li > a:last-child{
+  padding-bottom: 0;
+ }
+}
+
+@media (max-width:765px){
+  .mgnb > li a{
+    font-size: 1.6rem;
+  }
+  .mgnb-bg{
+    width: 60%;
+  }
+ .mdepth2 > li > a{
+    font-size: 1.2rem;
+ }
+ 
+}
+
+/* footer */
+footer {
+  background: url(../img/common/fbg1.png) no-repeat top center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+/* footer .f-bg{
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  position: absolute;
+  top: -100%; 
+  object-fit: cover;
+} */
+footer h2{
+  padding-top: 30%;
+}
+footer h2 img{
+  width: 200px;
+}
+footer .f-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .f-left ul{
+  padding: 30px 0 0;
+}
+footer .f-left ul li{
+  font-size: 1.5rem;
+  color: #868686;
+  font-weight: 300;
+  line-height: 1.5;
+}
+footer .f-list{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+footer .f-list li{
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+  padding-right: 23px;
+}
+footer .f-list li:last-child{
+  border: 0;
+}
+footer .f-list li a{
+  color: #868686;
+  font-size: 1.7;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+footer .f-list li:hover a{
+  color: var(--main-color);
+}
+
+footer .f-right{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+footer .f-right a{
+  height: 25px;
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+footer .f-right a img{
+  height: 25px;
+}
+footer .f-right a:last-child{
+  height: 28px;
+}
+footer .f-right a:last-child img{
+  height: 28px;
+}
+footer .f-right a:hover{
+  opacity: 1;
+}
+@media (max-width:1101px){
+  footer{
+    padding-bottom: 80px;
+  }
+  
+  
+}
+@media (max-width:765px){
+  footer{
+    padding-bottom: 50px;
+  }
+  footer .f-bottom{
+    flex-wrap: wrap;
+  }
+  footer h2{
+    padding-top: 45%;
+  }
+  footer h2 img{
+    width: 150px;
+  }
+  footer .f-right{
+    margin-top: 30px;
+    width: 100%;
+  }
+}

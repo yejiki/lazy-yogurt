@@ -1,0 +1,77 @@
+@charset "utr-8";
+
+/* font */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HS-Regular';
+  src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+  --main-font: 'Pretendard-Regular', sans-serif;
+  --sub-font: 'HS-Regular', sans-serif;
+  
+  --main-color: #184132;
+  --sub-color-y: #FBF9EC;
+  --sub-color-g: #3DB6AA;
+  --font-color: #333;
+  --font-color-sub: #505050;
+
+  --font-size-base: 2rem;
+  --font-size-large: 10rem;
+}
+
+/* 드래그 */
+::selection {
+  background: var(--sub-color-g);
+  color: #fff;
+}
+
+/* reset */
+html{
+  font-size: 10px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: var(--main-font);
+  color: var(--font-color);
+  font-size: var(--font-size-base);
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+ol, ul{
+  list-style: none;
+}
+a{
+  text-decoration: none; 
+  color: #000;
+}
+address, em{
+  font-style: normal;
+}
+caption , legend{
+  display: none;
+}
+select, input, fieldset, button{
+  border: 0; 
+  outline: none; 
+  vertical-align: top;
+  background-color: transparent;
+}
+img{
+  vertical-align: top; 
+  border: 0;
+}
